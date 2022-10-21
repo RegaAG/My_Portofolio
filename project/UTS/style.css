@@ -1,0 +1,32 @@
+/* Halaman 1 */
+
+.biodata {
+    background-color: #9099a2;
+}
+
+.table_biodata {
+    height: 40;
+}
+
+.foto-profil {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+/* Halaman 2*/
+
+.soal {
+    background-color: #d5d5d5;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 1;
+
+}

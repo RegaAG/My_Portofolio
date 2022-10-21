@@ -1,0 +1,31 @@
+body {
+    background-image: url(gambar/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 50px;
+}
+
+
+#header {
+    text-align: center;
+}
+
+#table {
+    text-align: center;
+}
+
+#materi_kuliah {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#materi {
+    padding: 10px 450px;
+}
