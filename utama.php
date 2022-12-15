@@ -1,3 +1,27 @@
+<?php
+require 'functions.php';
+
+if ( isset($_POST["submit"])){
+
+    if ( tambah($_POST)>0){
+        echo "
+        <script>
+            alert('Berhasil Mengirim Pesan');
+            document.location.href = 'utama.php';
+        </script>";
+    }else{
+        echo "
+        <script>
+            alert('Pesan Gagal Dikirim');
+            document.location.href = 'utama.php';
+        </script>";
+    }
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +76,7 @@
                 <li class="html">HTML</li>
                 <li class="css">CSS</li>
                 <li class="python">Python</li>
-                <li class="c">C++</li>
+                <li class="c">PHP</li>
             </ul>
         </div>
         <div class="foto">
@@ -76,14 +100,14 @@
         </div>
         <div id="contact-me">
             <h1>Contact</h1>
-            <form>
+            <form  action="" method="post">
                 <label for="name"> Full Name : </label><br>
-                <input type="text" id="name" name="name" size="50px"><br><br>
+                <input type="text" id="nama" name="nama" size="50px" required><br><br>
                 <label for="email"> Email : </label><br>
-                <input type="email" id="email" name="email" size="50px"><br><br>
+                <input type="email" id="email" name="email" size="50px" required><br><br>
                 <label for="pesan"> Pesan : </label><br>
-                <textarea id="pesan" name="pesan" cols="50" rows="10"></textarea><br><br>
-                <input type="submit" name="submit" value="Submit">
+                <textarea id="pesan" name="pesan" cols="50" rows="10" required></textarea><br><br>
+                <button type="submit" name="submit">Kirim</button>
             </form>
         </div>
     </div>
