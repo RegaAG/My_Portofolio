@@ -1,6 +1,6 @@
 <?php
 
-    $conn = mysqli_connect("localhost","root","","contactme_portofolio");
+    $conn = mysqli_connect("localhost","root","","portofolio");
 
 
     function tambah($data){
